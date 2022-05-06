@@ -1,3 +1,11 @@
-#!/bin/bash
+#!/bin/bash -x
+present=1;
+randomcheck=$((RANDOM%2))
+if [$present -eq $randomcheck]
+then
+echo "emp is present"
 
-echo"welcome to my employee"
+else
+ echo "emp is absent"
+fi
+
